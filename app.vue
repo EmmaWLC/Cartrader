@@ -1,151 +1,68 @@
 <template>
   <!-- NAV -->
   <nav
-    class="flex items-center justify-between w-full border border-neutral-900"
+    class="grid grid-cols-8 justify-between w-full border border-neutral-900"
   >
-    <div class="flex w-1/4">
-      <div
-        class="flex items-center justify-center h-20 px-6 py-8 border-r border-neutral-900 w-1/2"
-      >
-        <div
-          class="text-base font-medium leading-tight tracking-tight text-neutral-900"
-        >
-          Shop
-        </div>
-      </div>
-      <div
-        class="flex items-center justify-center h-20 px-6 py-8 border-r border-neutral-900 w-1/2"
-      >
-        <div
-          class="text-base font-medium leading-tight tracking-tight text-neutral-900"
-        >
-          Contact
-        </div>
-      </div>
+    <div
+      class="hidden md:block px-6 py-8 border-r border-neutral-900 self-center text-base font-medium leading-tight tracking-tight text-neutral-900 text-center"
+    >
+      Shop
     </div>
-    <div class="flex w-1/4">
-      <div
-        class="flex items-center justify-center h-20 px-6 py-8 border-l border-r border-neutral-900 w-1/2"
-      >
-        <div class="text-base leading-tight tracking-tight text-neutral-900">
-          Sign in
-        </div>
-      </div>
-      <div
-        class="flex items-center justify-center h-20 px-6 py-8 border-neutral-900 w-1/2"
-      >
-        <div class="text-base leading-tight tracking-tight text-neutral-900">
-          Cart
-        </div>
-      </div>
+    <div
+      class="hidden md:block px-6 py-8 border-r border-neutral-900 self-center text-base font-medium leading-tight tracking-tight text-neutral-900 text-center"
+    >
+      Contact
+    </div>
+    <div
+      class="hidden md:block px-6 py-8 border-l border-neutral-900 self-center text-base font-medium leading-tight tracking-tight text-neutral-900 text-center col-end-8"
+    >
+      Sign in
+    </div>
+    <div
+      class="hidden md:block px-6 py-8 border-l border-neutral-900 self-center text-base font-medium leading-tight tracking-tight text-neutral-900 text-center col-end-9"
+    >
+      Cart
+    </div>
+    <div class="flex justify-center align-center max-w-12 min-w-10 h-12 p-3 border-r border-neutral-900 md:hidden">
+      <img src="~/assets/icons/menu.svg" alt="" />
+    </div>
+    <div class="flex justify-center align-center max-w-12 min-w-10 h-12 p-3 border-l border-neutral-900 md:hidden col-end-9">
+      <img src="~/assets/icons/cart.svg" alt="" />
     </div>
   </nav>
   <!-- NAV -->
   <!-- Main -->
   <div
-    class="flex items-center justify-between w-full border-b border-neutral-900"
+    class="grid place-items-center border-b border-r border-l border-neutral-900 max-w-full"
   >
-    <!-- left -->
-    <div class="w-1/2 flex flex-col justify-center items-center">
-      <div class="w-3/4 h-[280px] border-b border-neutral-900">
-        <div
-          class="text-neutral-900 text-7xl font-semibold"
-        >
-          Kyiv<br />
-          <div class="flex items-start">
-            LuxeBouquets
-            <span
-              class="text-neutral-900 text-[40px] font-medium leading-[48px]"
-              >®</span
-            >
-          </div>
-        </div>
-        <div class="mt-4">
-          <p
-            class="text-neutral-900 text-opacity-90 text-lg font-normal leading-[25.20px]"
+    <div class="px-4 py-10 grid grid-cols-2 max-w-full">
+      <h1 class="text-neutral-900 font-semibold col-span-2">
+        Kyiv<br />
+        <div class="flex items-start">
+          LuxeBouquets
+          <span class="text-neutral-900 text-[20px] md:text-[40px] font-medium"
+            >®</span
           >
-            Discover Uniquely Crafted Bouquets and Gifts for Any Occasion:
-            Spread Joy with Our Online Flower Delivery Service
-          </p>
         </div>
-      </div>
-      <div class="w-3/4 h-[280px] inline-flex pt-6">
-          <div
-            class="w-1/2 border-r border-neutral-900"
-          >
-            <div class="h-full pr-6">
-              <img class="h-full object-cover" src="https://via.placeholder.com/360x360" alt="" />
-
-            </div>
-              
-          </div>
-          <div
-            class="w-1/2 flex items-end justify-start pl-6"
-          >
-            <div
-              class="grow shrink basis-0 text-neutral-900 text-opacity-90 text-sm font-normal leading-[16.80px]"
-            >
-              Experience the joy of giving with our modern floral studio. Order
-              online and send fresh flowers, plants and gifts today.
-            </div>
-        </div>
-      </div>
-    </div>
-    <!-- left -->
-    <!-- right -->
-    <div
-      class="flex-col items-center border-l border-neutral-900 justify-between w-1/2"
-    >
-      <div
-        class="flex items-center justify-between border-r border-neutral-900"
+      </h1>
+      <p
+        class="text-neutral-900 text-opacity-90 pt-4 pb-6 col-span-2 border-b border-neutral-900"
       >
-        <div class="w-1/2 h-full bg-orange-400"></div>
-        <!-- <div class="flex-col items-center justify-center w-1/2 p-6 relative h-full">
-          <div
-            class="grow shrink basis-0 text-center text-neutral-900 text-[38px] font-medium leading-[45.60px]"
-          >
-            Fresh Flowers
-          </div>
-          <div class="justify-center items-center gap-1 inline-flex">
-            <div
-              class="text-neutral-900 text-base font-semibold leading-tight tracking-tight"
-            >
-              Shop now
-            </div>
-            <div class="w-6 h-6 relative">haha</div>
-          </div>
-        </div> -->
-        <div
-          class="flex items-center justify-center object-cover w-1/2 border-l border-neutral-900"
-        >
-          <img class="w-full" src="https://via.placeholder.com/360x360" />
-        </div>
+        Discover Uniquely Crafted Bouquets and Gifts for Any Occasion: Spread
+        Joy with Our Online Flower Delivery Service
+      </p>
+      <div class="pt-4 border-r border-neutral-900 pr-4">
+        <img
+          class="h-full object-cover"
+          src="~/assets/images/hero.jpg"
+          alt=""
+        />
       </div>
       <div
-        class="flex items-center justify-between w-full border-t border-r border-neutral-900"
+        class="text-neutral-900 text-opacity-90 text-sm font-normal leading-[16.80px] pt-4 pl-4 self-end"
       >
-        <div class="flex-col items-center justify-center w-1/2 p-6">
-          <div class="flex-col items-center">
-            <div
-              class="grow shrink basis-0 text-center text-neutral-900 text-[38px] font-medium leading-[45.60px]"
-            >
-              Fresh Flowers
-            </div>
-            <div class="flex items-center justify-center gap-1">
-              <div
-                class="text-base font-semibold leading-tight tracking-tight text-neutral-900"
-              >
-                Shop now
-              </div>
-              <div class="relative w-6 h-6">a</div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="flex items-center justify-center object-cover w-1/2 border-l border-neutral-900"
-        >
-          <img class="w-full" src="https://via.placeholder.com/360x360" />
-        </div>
+        Experience the joy of giving with our modern floral studio. Order online
+        and send fresh flowers, plants and gifts today.
       </div>
     </div>
   </div>

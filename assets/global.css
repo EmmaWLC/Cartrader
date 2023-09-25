@@ -2,25 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: "Gilroy-light";
-    src: url("../assets/font/Gilroy-FREE/Gilroy-Light.otf");
+  font-family: "Gilroy-light";
+  src: url("../assets/font/Gilroy-FREE/Gilroy-Light.otf");
 }
 @font-face {
-    font-family: "Gilroy-ExtraBold";
-    src: url("../assets/font/Gilroy-FREE/Gilroy-ExtraBold.otf");
+  font-family: "Gilroy-ExtraBold";
+  src: url("../assets/font/Gilroy-FREE/Gilroy-ExtraBold.otf");
 }
 @layer base {
-    h1 {
-      @apply text-2xl;
-    }
-    h2 {
-      @apply text-xl;
-    }
-    h3 {
-      @apply text-lg;
-    }
-    a {
-      @apply text-blue-600 underline;
-    }
+  h1 {
+    @apply md:text-7xl xs:text-[40px] text-4xl leading-tight;
   }
-  
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  p {
+    @apply text-sm;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+@layer utilities {
+  .square {
+    aspect-ratio: 1 / 1;
+  }
+}
