@@ -23,19 +23,25 @@
     >
       Cart
     </div>
-    <div class="flex justify-center align-center max-w-12 min-w-10 h-12 p-3 border-r border-neutral-900 md:hidden">
-      <img src="~/assets/icons/menu.svg" alt="" />
+    <div
+      class="flex justify-center align-center max-w-12 min-w-10 h-12 p-3 border-r border-neutral-900 md:hidden"
+    >
+      <img src="~@/assets/icons/menu.svg" alt="" />
     </div>
-    <div class="flex justify-center align-center max-w-12 min-w-10 h-12 p-3 border-l border-neutral-900 md:hidden col-end-9">
-      <img src="~/assets/icons/cart.svg" alt="" />
+    <div
+      class="flex justify-center align-center max-w-12 min-w-10 h-12 p-3 border-l border-neutral-900 md:hidden col-end-9"
+    >
+      <img src="~@/assets/icons/cart.svg" alt="" />
     </div>
   </nav>
   <!-- NAV -->
   <!-- Main -->
   <div
-    class="grid place-items-center border-b border-r border-l border-neutral-900 max-w-full"
+    class="grid place-items-center border-r border-l border-neutral-900 max-w-full"
   >
-    <div class="px-4 py-10 grid grid-cols-2 max-w-full">
+    <div
+      class="px-4 py-10 grid grid-cols-2 max-w-full border-b border-neutral-900"
+    >
       <h1 class="text-neutral-900 font-semibold col-span-2">
         Kyiv<br />
         <div class="flex items-start">
@@ -65,6 +71,84 @@
         and send fresh flowers, plants and gifts today.
       </div>
     </div>
+    <div class="grid grid-cols-2 max-w-full relative">
+      <div
+        class="grid justify-items-center content-center border-neutral-900 border-b"
+      >
+        <h3 class="text-neutral-900 text-2xl font-medium leading-loose">
+          Fresh Flowers
+        </h3>
+        <div class="flex align-center justify-center absolute bottom-3">
+          <div class="text-neutral-900 text-sm font-semibold tracking-tight">
+            Shop now
+          </div>
+          <img src="~/assets/icons/arrow.svg" alt="" />
+        </div>
+      </div>
+      <div class="object-cover">
+        <img src="~@/assets/images/item-1.jpg" alt="" />
+      </div>
+    </div>
+    <div class="grid grid-cols-2 max-w-full relative">
+      <div
+        class="grid justify-items-center content-center border-neutral-900 border-b row-start-1 col-start-2"
+      >
+        <h3 class="text-neutral-900 text-2xl font-medium leading-loose">
+          Dried Flowers
+        </h3>
+        <div class="flex align-center justify-center absolute bottom-3">
+          <div class="text-neutral-900 text-sm font-semibold tracking-tight">
+            Shop now
+          </div>
+          <img src="~/assets/icons/arrow.svg" alt="" />
+        </div>
+      </div>
+      <div class="object-cover">
+        <img src="~@/assets/images/item-1.jpg" alt="" />
+      </div>
+    </div>
+    
+  </div>
+  <div
+    class="grid place-items-center border-r border-l border-neutral-900 max-w-full"
+  >
+  <div class="grid grid-cols-2 max-w-full relative">
+      <div
+        class="grid justify-items-center content-center border-neutral-900 border-b"
+      >
+        <h3 class="text-neutral-900 text-2xl font-medium leading-loose">
+          Dried Flowers
+        </h3>
+        <div class="flex align-center justify-center absolute bottom-3">
+          <div class="text-neutral-900 text-sm font-semibold tracking-tight">
+            Shop now
+          </div>
+          <img src="~/assets/icons/arrow.svg" alt="" />
+        </div>
+      </div>
+      <div class="object-cover">
+        <img src="~@/assets/images/item-1.jpg" alt="" />
+      </div>
+    </div>
+    <div class="grid grid-cols-2 max-w-full relative">
+      <div
+        class="grid justify-items-center content-center border-neutral-900 border-b"
+      >
+        <h3 class="text-neutral-900 text-2xl font-medium leading-loose">
+          Fresh Flowers
+        </h3>
+        <div class="flex align-center justify-center absolute bottom-3">
+          <div class="text-neutral-900 text-sm font-semibold tracking-tight">
+            Shop now
+          </div>
+          <img src="~/assets/icons/arrow.svg" alt="" />
+        </div>
+      </div>
+      <div class="object-cover">
+        <img src="~@/assets/images/item-1.jpg" alt="" />
+      </div>
+    </div>
+    
   </div>
   <!-- Main -->
   <!-- AboutUs -->
